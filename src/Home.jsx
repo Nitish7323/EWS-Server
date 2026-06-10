@@ -5,23 +5,22 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <div className=''>
-
+    <div >
       <div className='bg-accent-content w-full hover:underline  flex  h-10 justify-center p-2'>
       Grab your first .online domain for just $0.98 and any additional ones for $2.88  --→ 
       </div >
       <div className=''>
-        <div className='relative  h-150 w-full '>
+        <div className='relative  w-full '>
         <img className='h-full w-full object-cover' src="https://static.nc-img.com/pp/cms/home-reskinned/images/hero-decor-img.1b428d4dbf6eadc91ac4514250396213.svg" alt="" />
         <div className='absolute inset-0 flex justify-center '>
             <div>
-                <p className='mt-45 text-6xl ml-18'>Make more online, for less</p>
+                <p className='mt-20 text-6xl ml-18'>Make more online, for less</p>
                 <div className='mt-10 ml-75 border-2 w-66 border-accent  flex  '>
                     <button className="btn btn-xs h-10 bg-amber-50  sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl ">Register</button>
                     <button className="btn btn-xs h-10 sm:btn-sm  bg-amber-50 md:btn-md lg:btn-lg xl:btn-xl">Transfer</button>
                 </div>
 
-                <div className='flex border-2 h-13 w-210 mt-15 justify-between rounded ml-5'>
+                <div className='flex border-2 h-13 w-210 mt-8 justify-between rounded ml-5'>
                 <input className='p-5 w-full text-2xl ' type="text" placeholder='Register a Domain Name to Start' />
                 <button className='w-20 bg-red-700 p-2'>Search</button>
                 </div>
@@ -158,7 +157,7 @@ const Home = () => {
 
           </div>
 
-          <div className='flex justify-center'>
+          <div className='flex justify-center -mt-10'>
             <div >
             <img className='ml-20' src="data:image/jpeg;base64,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" alt="" />
             <span className='text-gray-700 font-bold text-3xl'>Rated 4.5 out of 5 by 2M+ customers</span>
@@ -197,7 +196,7 @@ const Home = () => {
             </div>
 
 
-            <div className='-mt-15 ml-15 flex gap-18 p-40'>
+            <div className='-mt-25 ml-15 flex gap-18 p-40'>
               <img className='-mt-18' src="https://static.nc-img.com/pp/cms/home-reskinned/images/add-email.29cf403e4bf786cddb6c9da52bc11548.svg" alt="" />
               <div className=' w-120'>
                 <p className='text-gray-700 font-bold mb-5 text-2xl'>Add professional email</p>
@@ -207,7 +206,7 @@ const Home = () => {
             </div>
 
 
-            <div className='-mt-30 ml-20 flex gap-18 p-40'>
+            <div className='-mt-35 ml-20 flex gap-18 p-40'>
               <div className=' w-120'>
                 <p className='text-gray-700 font-bold mb-5 text-2xl'>Security for you and your customers</p>
                 <span className='text-gray-600 text-xl font-bol '>Take the stress out of security with low-cost SSL Certificates, PremiumDNS, VPN and more. Plus a range of features — like 2-Factor Authentication — included completely free with your account.</span>
@@ -217,7 +216,7 @@ const Home = () => {
             </div>
 
 
-            <div className='-mt-20 ml-15 flex gap-18 p-40'>
+            <div className='-mt-25 ml-15 flex gap-18 p-40'>
               <img className='-mt-18' src="https://static.nc-img.com/pp/cms/home-reskinned/images/boost-performance.43950268dc2c215d552d4233f51593cc.svg" alt="" />
               <div className=' w-120'>
                 <p className='text-gray-700 font-bold mb-5 text-2xl'>Boost performance with our apps</p>
@@ -227,7 +226,7 @@ const Home = () => {
             </div>
 
 
-            <div className='flex justify-center mt-10'>
+            <div className='flex justify-center '>
             <div>
               <p className='text-3xl  items-center text-gray-700 font-bold mb-4 '>Unleash your full potential</p>
               <span className='text-xl text-gray-600 -ml-7 font-bold'>Extra support and knowledge is waiting for you</span>
@@ -235,7 +234,7 @@ const Home = () => {
             </div>
 
 
-            <div className=' grid grid-cols-3 p-60 -mt-28'>
+            <div className=' grid grid-cols-3 p-60 -mt-35'>
 
 
               <div className='w-78 h-100 rounded bg-amber-100'>
@@ -261,7 +260,7 @@ const Home = () => {
 
             </div>
 
-            <div className='flex border-2 text-black'>
+            <div className='flex -mt-5 border-2 text-black'>
               <img className='ml-30 size-60 -mt-30' src="https://static.nc-img.com/pp/home-page/client/assets/images/subscription-section-img.4217afdc.svg" alt="" />
               <div>
                 <p className='text-2xl font-bold text-gray-700'>Stay inspired </p>
@@ -276,13 +275,6 @@ const Home = () => {
             </div>
               
             
-
-
-
-
-
-
-
         </div>
         
         

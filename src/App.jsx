@@ -10,6 +10,7 @@ import NewTLDS from './NewTLDS';
 import Sharedhosting from './Sharedhosting';
 import BusinessEmail from './BusinessEmail';
 import HostingWordpress from './HostingWordpress';
+import Footer from './Footer';
 
 const App = () => {
   return (

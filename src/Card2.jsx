@@ -4,7 +4,7 @@ const Card2 = () => {
   return (
     <div>
      <div className='mr-8'>
-       <div className="card w-86 bg-base-300 border-accent border-2 shadow-sm">
+       <div className="card w-86 bg-base-100/95 border-accent border-2 shadow-sm">
   <div className="card-body ">
     <div className='flex'>
         <span className="badge bg-green-600 badge-s  mr-2">NEW</span>
