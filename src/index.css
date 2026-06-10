@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.btn,li{
+    color: #00d4f0;
+    font-family: "Archivo", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}

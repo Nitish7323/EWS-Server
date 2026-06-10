@@ -1,0 +1,50 @@
+import React, { useEffect } from 'react'
+import Card3 from './Card3'
+
+const BusinessEmail = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+   
+  return (
+    <div>
+    <div className='flex justify-center'>
+     <div className='bg-white h-185 w-full relative '>
+       <p className='flex justify-center items-center h-10 bg-accent '>Professional Email on sale! Enjoy up to 33% off with promo code MAILDEAL</p>
+       <div className='h-100 ml-30  w-130 mt-40'>
+        <div className=' h-15 w-1/2 '>
+        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJ1dWlkLTgyY2VmOTFmLWVmMzMtNDQ2Yy04NzIzLWNiNWRjYzZkMjVlMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTE1NiIgaGVpZ2h0PSIyMTAiIHZpZXdCb3g9IjAgMCAxMTU2IDIxMCI+PHBhdGggZD0iTTMzMC43MDQsNDYuODk2MmgtNDUuNjZ2OTcuNDUzM2gxNy45MjM4di0zMy40NjE1aDI3LjczNjJjMjEuMTI2OSwwLDM2LjA4NDMtMTMuMjg4OSwzNi4wODQzLTMyLjA2MzcsMC0xOC43NDEzLTE0Ljg5MDQtMzEuOTI4MS0zNi4wODQzLTMxLjkyODFaTTMyOS41NDU2LDk1LjM1MDJoLTI2LjU3Nzd2LTMyLjkxNThoMjYuODE2NWMxMS43NTQzLDAsMTkuMDgwMSw2LjI2OTQsMTkuMDgwMSwxNi4zODk4LDAsMTAuMTg3OS03LjQyNjIsMTYuNTI2LTE5LjMxODksMTYuNTI2WiIgZmlsbD0iIzE4MTkxYiIvPjxwYXRoIGQ9Ik0zOTYuNjA4LDg0LjQ0NjF2LTE1LjIzMTFoLTE3LjEwNjl2NzUuMTM0NGgxNy4xMDY5di0zNS43Nzg1YzAtMTUuNzQxOSw2LjA2NDYtMjMuMTcwNCwyNS40MTkyLTIzLjE3MDRoNS42NTYydi0xNi4xODU2aC0zLjk1MzFjLTE1LjI5ODksMC0yMy4xOTEzLDguOTg4Ny0yNy4xMjIzLDE1LjIzMTFaIiBmaWxsPSIjMTgxOTFiIi8+PHBvbHlnb24gcG9pbnRzPSI1MDcuMjAxMSAxMzMuNjQ5OSA0ODYuNTg1NCA2OS4yMTUgNDY4LjY5NSA2OS4yMTUgNDk0LjU1ODUgMTQ0LjM0OTUgNTE5LjQzMzEgMTQ0LjM0OTUgNTQ1LjUzMzEgNjkuMjE1IDUyOC4wNTM1IDY5LjIxNSA1MDcuMjAxMSAxMzMuNjQ5OSIgZmlsbD0iIzE4MTkxYiIvPjxwYXRoIGQ9Ik02NjIuMDczNyw1MS45MDU2aC0xNy4xMDY5djE3LjMwOTRoLTkuODEyM3YxMy45MDIxaDkuODEyM3YzNS4zMzU0YzAsMTguNDAwNCw4LjM4MzgsMjcuOTA2OSwyNC4xNjAzLDI3LjkwNjksNC43MDA4LDAsMTAuMDg0Ny0uODUxNSwxNi4xODUtMi41ODkydi0xMy44MzQ2Yy01LjQ1MywxLjQzMTMtOS40NzMxLDIuMDc5Mi0xMi40MzczLDIuMDc5Mi03LjQ5NTQsMC0xMC44MDEyLTQuMjI1NC0xMC44MDEyLTEzLjUyNzd2LTM1LjM3aDIzLjIzODV2LTEzLjkwMjFoLTIzLjIzODV2LTE3LjMwOTRaIiBmaWxsPSIjMTgxOTFiIi8+PHBvbHlnb24gcG9pbnRzPSI4MDkuMzU5NSAxMDMuMzkyIDg1My45OTcyIDEwMy4zOTIgODUzLjk5NzIgODguMDU4NSA4MDkuMzU5NSA4OC4wNTg1IDgwOS4zNTk1IDYyLjcwNjggODU4LjAxNzIgNjIuNzA2OCA4NTguMDE3MiA0Ni44OTYyIDc5MS40MzU2IDQ2Ljg5NjIgNzkxLjQzNTYgMTQ0LjM0OTUgODU5LjMxMTggMTQ0LjM0OTUgODU5LjMxMTggMTI4LjUzODkgODA5LjM1OTUgMTI4LjUzODkgODA5LjM1OTUgMTAzLjM5MiIgZmlsbD0iIzE4MTkxYiIvPjxyZWN0IHg9IjExMjcuNzU0IiB5PSI0My40ODg5IiB3aWR0aD0iMTcuMTA2OSIgaGVpZ2h0PSIxMDAuODYwNiIgZmlsbD0iIzE4MTkxYiIvPjxwYXRoIGQ9Ik01ODguNzU5LDY3LjE3MTRjLTIwLjc2MjgsMC0zMy45ODQxLDEwLjI0NDMtMzUuMDU5NCwyNi43MTM5aDE3LjEwMTNjLjg2ODItNy42MzI3LDYuNDUxMi0xMi40MzczLDE3LjYxNjYtMTIuNDM3MywxMS45OTUzLDAsMTkuMzIxMSw2Ljk4NDMsMTkuMzIxMSwxOC4zMzIzdjEuNzM2NmgtMjYuMTAyM2MtMTguODQzNSwwLTMwLjI1ODUsOC40ODU0LTMwLjI1ODUsMjIuNDU1LDAsMTMuNDU5NiwxMC41NjQ2LDIyLjQyMTUsMjYuNDc3MywyMi40MjE1LDE1LjI2NTQsMCwyNS44NDI2LTcuMTk0NiwyOS44ODM1LTEyLjA3MDd2MTAuMDI2MWgxNy4xMDQ2di00NC41Njg1YzAtMjAuNDc5Ni0xMy40OTMxLTMyLjYwODktMzYuMDg0My0zMi42MDg5Wk02MDcuNzM4NiwxMTUuNjU5NWMwLDkuOTQ4NS0xMC4wNTM0LDE3LjEzODEtMjQuMDI0MiwxNy4xMzgxLTkuODQ1OCwwLTE1LjI5ODktMy41NzgxLTE1LjI5ODktOS45ODQyLDAtNi4wOTgxLDQuOTA2Mi05LjMwMTIsMTQuMjA5Ni05LjMwMTJoMjUuMTEzNHYyLjE0NzNaIiBmaWxsPSIjMTgxOTFiIi8+PHBhdGggZD0iTTczMS41NDkyLDY3LjE3MTRjLTIyLjE0NywwLTM3LjAzNzQsMTUuODc3LTM3LjAzNzQsMzkuNTI2MiwwLDIzLjcxNjEsMTUuMDYsMzkuNjk1OCwzNy40NDU4LDM5LjY5NTgsMTcuMDI0NiwwLDI5LjkxMTktOS4yNjU1LDM0LjU4LTI0LjczNTFoLTE2Ljk1MzNjLTMuNDk2Miw2LjgyMjQtOS4xNTQ3LDEwLjMyMjQtMTcuMTgyNSwxMC4zMjI0LTExLjgyMzUsMC0xOS41Ni03LjQ5NzctMjAuOTkwNy0yMC4wMDE5aDU1Ljg4MzFjLjIwMzEtMS45NDE5LjI3MjMtMy42ODA3LjI3MjMtNS40NTMsMC0yMy44ODU4LTE0LjE3NjEtMzkuMzU0My0zNi4wMTczLTM5LjM1NDNaTTcxMS42NDk5LDk5LjcxMTFjMS44NzUtMTEuNTE2Niw5LjA2NDYtMTguMjYzMSwxOS45Njg0LTE4LjI2MzEsMTAuNjMxNSwwLDE3LjIwNzMsNi4zNzI3LDE5LjAxMzEsMTguMjYzMWgtMzguOTgxNVoiIGZpbGw9IiMxODE5MWIiLz48cmVjdCB4PSIxMDkzLjUyOCIgeT0iNjkuMjE0OSIgd2lkdGg9IjE3LjEwNjkiIGhlaWdodD0iNzUuMTMzOSIgZmlsbD0iIzE4MTkxYiIvPjxyZWN0IHg9IjEwOTMuMjU1NyIgeT0iNDMuNDg4OSIgd2lkdGg9IjE3LjY1MTUiIGhlaWdodD0iMTUuMzY2IiBmaWxsPSIjMTgxOTFiIi8+PHJlY3QgeD0iNDQwLjA2OTQiIHk9IjY5LjIxNDkiIHdpZHRoPSIxNy4xMDY5IiBoZWlnaHQ9Ijc1LjEzMzkiIGZpbGw9IiMxODE5MWIiLz48cmVjdCB4PSI0MzkuNzk3IiB5PSI0My40ODg5IiB3aWR0aD0iMTcuNjUxNSIgaGVpZ2h0PSIxNS4yMzgzIiBmaWxsPSIjMTgxOTFiIi8+PHBhdGggZD0iTTEwNDAuOTc1Myw2Ny4xNzE0Yy0yMC43NjI4LDAtMzMuOTg0MSwxMC4yNDQzLTM1LjA1OTQsMjYuNzEzOWgxNy4xMDEzYy44NjgyLTcuNjMyNyw2LjQ1MTItMTIuNDM3MywxNy42MTY2LTEyLjQzNzMsMTEuOTk1MywwLDE5LjMyMTEsNi45ODQzLDE5LjMyMTEsMTguMzMyM3YxLjczNjZoLTI2LjEwMjNjLTE4Ljg0MzUsMC0zMC4yNTg1LDguNDg1NC0zMC4yNTg1LDIyLjQ1NSwwLDEzLjQ1OTYsMTAuNTY0NiwyMi40MjE1LDI2LjQ3NzMsMjIuNDIxNSwxNS4yNjU0LDAsMjUuODQyNi03LjE5NDYsMjkuODgzNS0xMi4wNzA3djEwLjAyNjFoMTcuMTA0NnYtNDQuNTY4NWMwLTIwLjQ3OTYtMTMuNDkzMS0zMi42MDg5LTM2LjA4NDMtMzIuNjA4OVpNMTA1OS45NTQ5LDExNS42NTk1YzAsOS45NDg1LTEwLjA1MzQsMTcuMTM4MS0yNC4wMjQyLDE3LjEzODEtOS44NDU4LDAtMTUuMjk4OS0zLjU3ODEtMTUuMjk4OS05Ljk4NDIsMC02LjA5ODEsNC45MDYyLTkuMzAxMiwxNC4yMDk2LTkuMzAxMmgyNS4xMTM0djIuMTQ3M1oiIGZpbGw9IiMxODE5MWIiLz48cGF0aCBkPSJNOTY1LjYwMDMsNjcuMTcxYy0xMi4xNjczLTEuNDc5My0yMy43MzgyLDQuNzg4My0yOC43OTUsMTQuMjg2OC00LjAyNi05LjM5OTUtMTAuNzIyNS0xNC4yODAyLTIwLjk1NDItMTQuMjg2OC05LjA3My0uMDA1OC0xOS40MDQ0LDQuMDgxLTI1LjI4MzEsMTEuNzY4NnYtOS43MjQ2aC0xNy4xMDY5djc1LjEzNDRoMTcuMTA2OXYtNDAuMDM3M2MwLTE0LjAzODgsNi40MDYxLTIyLjAxMjUsMTcuMzQzNS0yMi4wMTI1LDEwLjI1NjUsMCwxNS4yOTg5LDYuOTg1NCwxNS4yOTg5LDIwLjkyMjF2NDEuMTI3N2gxNy4xMDQ2di00MC4wMzczYzAtMTQuMDM4OCw2LjQwNjEtMjIuMDEyNSwxNy4zNDU3LTIyLjAxMjUsMTAuMjU2NSwwLDE1LjI5ODksNi45ODU0LDE1LjI5ODksMjAuOTIyMXY0MS4xMjc3aDE3LjEwNDZ2LTQyLjgzMTljMC0yMS43NzMxLTguOTczMy0zMi40NjMyLTI0LjQ2MzktMzQuMzQ2NloiIGZpbGw9IiMxODE5MWIiLz48cGF0aCBkPSJNMTM5LjQ3NDMsMTQ4LjE4NjNjLTEwLjc5NTUsMC00My4xODE5LDAtNDMuMTgxOSwwTDE0Mi4yOTY2LDE3LjQyMTIsNDMuODgxOSwxNzMuMjQ5MmMtMTUuNzE0MiwyNC44ODE2LTMzLjk1MzEsMjYuNzU1Mi0zMy45NTMxLDI2Ljc1NTJoMFYzMC41NDI3YzAtMTEuMzE3Miw5LjEwNzgtMjAuNTM4MiwyMC41MzgyLTIwLjUzODJoMTA5LjAwNzNjMzguMTU3OCwwLDYzLjkwOSwzMS4yMzc2LDYzLjkwOSw2OS4wOTA4LDAsMzguMzU4LTI1Ljc1MTIsNjkuMDkxLTYzLjkwOSw2OS4wOTFaIiBmaWxsPSIjNTk4M2ZmIi8+PC9zdmc+" alt="" />
+        <p className='mt-5 text-black text-5xl font-bold w-85 '>Rethink what business email can do</p>
+        <p className='w-100 mt-5 text-xl text-black'>Look pro, build trust, and grow faster with a business email like @yourbrand.com, now free for 30 days.</p>
+        <button className='w-50 h-10 rounded mt-10 bg-red-700 text-xl'>Get Business Email</button>
+        </div>
+        </div>
+     </div>
+     <div className='mt-20 h-150 w-100 ml-45 absolute rounded-2xl  '>
+        
+        <div className='flex'>
+        <img className='rounded-2xl w-full h-full object-cover' src="https://static.nc-img.com/uiprivateemailcms/b122533fbf3bafa8e30ea32d70f6a9e2.webp" alt="" />
+        <img className='rounded-2xl w-full h-full object-cover bg-orange-600 ml-4' src="https://static.nc-img.com/uiprivateemailcms/ef552d574b030181d3c64d5de8aec413.webp" alt="" />
+        </div>
+     </div>
+     <div className='mt-0 h-0 w-00 ml- absolute bg-amber-500 rounded-2xl  '>
+        
+     </div>
+     <div className='mt-20 h-150 w-100 ml-45 absolute bg-amber-500 rounded-2xl  '>
+        <img className='rounded-2xl w-full h-full object-cover' src="https://static.nc-img.com/uiprivateemailcms/b122533fbf3bafa8e30ea32d70f6a9e2.webp" alt="" />
+     </div>
+    </div>
+    <p className='flex justify-center text-3xl font-bold mt-15 text-gray-400'>Plans and pricing</p>
+    <p className='flex justify-center text-xl mt-3 text-gray-500'>Start free today, get growing tomorrow</p>
+
+    <div className='grid grid-cols-3 p-20'>
+    <Card3/>
+    <Card3/>
+    <Card3/>
+ </div>
+    </div>
+  )
+}
+
+export default BusinessEmail ;
