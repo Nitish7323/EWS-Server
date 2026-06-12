@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Card3 from './Card3'
+import Card3 from '../Cards/Card3'
 
 const Sharedhosting = () => {
   const [billing, setBilling] = useState("monthly")

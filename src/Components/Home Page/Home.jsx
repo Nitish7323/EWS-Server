@@ -1,11 +1,17 @@
 
 import React from 'react'
 import { Link } from 'react-router-dom'
+import HomeCard from '../Navbar/Cards/HomeCard';
+import cardData from '../Home Page/Data'
+
 
 
 const Home = () => {
+
+
+
   return (
-    <div >
+    <div className='bg-white' >
       <div className='bg-accent-content w-full hover:underline  flex  h-10 justify-center p-2'>
       Grab your first .online domain for just $0.98 and any additional ones for $2.88  --→ 
       </div >
@@ -44,115 +50,25 @@ const Home = () => {
           <p className='text-gray-500 text-xl ml-100 mt-3'>Check out our best deals across our product range, and get what your website needs.</p>
 
 
-          <div className='grid grid-cols-3 gap-7 p-50 -mt-20'>
+        
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-45">
+         {cardData.map((card) => (
+         <HomeCard
+         key={card.id}
+         title={card.title}
+         subtitle={card.subtitle}
+         description={card.description}
+         price={card.price}
+         renews={card.renews}
+         button={card.button}
+         badge={card.badge}
+         link={card.link}
+         />
+          ))}
+         </div>
+         
 
 
-
-            <Link to="/Sharedhosting">
-            <div className='flex justify-between  '>
-            <div className="card bg-base-100 border-2 border-accent w-86 shadow-sm h-120 rounded-3xl">
-            <img className='object-cover w-full h-120 relative rounded-2xl' src="https://static.nc-img.com/pp/cms/home-reskinned/images/promo-card.00bd047838b0328804cecac7222a8e97.svg" alt="" />
-            <div className="card-body absolute">
-            <h2 className="card-title bg-green-500  w-20 p-1 rounded">Free trial</h2>
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hard-drive-icon lucide-hard-drive"><path d="M10 16h.01"/><path d="M2.212 11.577a2 2 0 0 0-.212.896V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5.527a2 2 0 0 0-.212-.896L18.55 5.11A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><path d="M21.946 12.013H2.054"/><path d="M6 16h.01"/></svg>
-            <p className='mt-5 text-2xl font-bold'>Launch your website today with 1 month of FREE Shared Hosting.</p>
-            <button className='text-xl bg-white/5 border-2 h-13 rounded mt-35'>Start Trail</button>
-            </div>
-            </div>
-            </div>
-            </Link>
-
-
-            
-
-
-            <Link to = "/BusinessEmail">
-            <div className='flex justify-between '>
-            <div className="card bg-base-100 border border-accent w-86 shadow-sm h-120 rounded-3xl">
-            <div className="card-body bg-amber-50 border rounded-2xl shadow-gray-700 text-black">
-            <h2 className="card-title bg-green-500 w-20 p-1 rounded">Free trial</h2>
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
-            <p className='text-2xl font-bold text-gray-700'>Private Email</p>
-            <p className='text-l font-bold text-gray-600'>Professional Email</p>
-            <p className='mt-3 text-l font-bold text-gray-700 w-full'> Send your brand out there with an email address that matches your domain. Get perfect email plan for individuals and small teams and use it free for a month!</p>
-            <p className='text-2xl font-bold -mb-5 text-gray-700'>Rs0.00/1 mo</p>
-            <p className='text-l font-bold -mb-5 text-gray-600'>Renews from Rs118.68/mo</p>
-            <button className='text-xl border-none bg-amber-100 h-13 rounded mt-6'>Get it Free</button>
-            </div>
-            </div>
-            </div>
-            </Link>
-
-
-            <div className='flex justify-between '>
-            <div className="card bg-base-100 border border-accent w-86 shadow-sm h-120 rounded-3xl">
-            <div className="card-body bg-amber-50 border rounded-2xl shadow-gray-700 text-black">
-            <h2 className="card-title bg-red-500 w-20 p-2 rounded">17%off</h2>
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-            <p className='text-2xl -mt-2 font-bold text-gray-700'>.NYC</p>
-            <p className='text-l font-bold text-gray-600'>Domains</p>
-            <p className='mt-3 text-l font-bold text-gray-700 w-full'>  Take your Big Apple brand to the next level online.</p>
-            <p className='text-2xl mt-6 -mb-5 font-bold text-gray-700'>Rs668.04/yr</p>
-            <p className='text-l font-bold -mb-5 text-gray-600'>Instead of Rs3156.46/yr</p>
-            <button className='text-xl border-none bg-amber-100 h-13 rounded mt-6'>Get offer</button>
-            </div>
-            </div>
-            </div>
-
-
-            <div className='flex justify-between '>
-            <div className="card bg-base-100 border border-accent w-86 shadow-sm h-120 rounded-3xl">
-            <div className="card-body bg-amber-50 border rounded-2xl shadow-gray-700 text-black">
-            <div className='flex gap-3'>
-              <h2 className="card-title bg-green-500 w-20 p-1 rounded">US only</h2>
-              <h2 className="card-title bg-red-500 w-20 p-1 rounded">Free LLC</h2>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-            <p className='text-2xl font-bold text-gray-700'>Business Starter Kit</p>
-            <p className='text-l font-bold text-gray-600'>Business Tool</p>
-            <p className='mt-3 text-l font-bold text-gray-700 w-full'> Everything you need to start your business — LLC, domain, website, and marketing tools, all for FREE. It's never been easier to take the first step.</p>
-            <p className='text-2xl -mb-5 font-bold text-gray-700'>Free </p>
-            <p className='text-l -mb-5 font-bold text-gray-600'>Just Pay State Fee</p>
-            <button className='text-xl border-none bg-amber-100 h-13 rounded mt-6'>Get Started</button>
-            </div>
-            </div>
-            </div>
-
-
-            <Link to="/HostingWordpress">
-            <div className='flex justify-between '>
-            <div className="card bg-base-100 border border-accent w-86 shadow-sm h-120 rounded-3xl">
-            <div className="card-body bg-amber-50 border rounded-2xl shadow-gray-700 text-black">
-            <h2 className="card-title bg-green-500 w-20 p-1 rounded">Free trial</h2>
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-whole-word-icon lucide-whole-word"><circle cx="7" cy="12" r="3"/><path d="M10 9v6"/><circle cx="17" cy="12" r="3"/><path d="M14 7v8"/><path d="M22 17v1c0 .5-.5 1-1 1H3c-.5 0-1-.5-1-1v-1"/></svg>
-            <p className='text-2xl font-bold text-gray-700'>EasyWP Starter</p>
-            <p className='text-l font-bold text-gray-600'>Hosting For Wordpress</p>
-            <p className='mt-3 text-l font-bold text-gray-700 w-full'> Get a month of FREE web hosting with our EasyWP Starter trial offer.</p>
-            <p className='text-2xl font-bold -mb-7 text-gray-700'>Rs0.00/1st mo</p>
-            <p className='text-l font-bold -mb-7 text-gray-600'>Renews for Rs945.60/mo</p>
-            <button className='text-xl border-none bg-amber-100 h-13 rounded mt-6'>Try Now</button>
-            </div>
-            </div>
-            </div>
-            </Link>
-
-
-            <Link to="/Domainname">
-            <div className='flex justify-between '>
-            <div className="card bg-base-100 border border-accent w-86 shadow-sm h-120 rounded-3xl">
-            <div className="card-body bg-amber-50 border rounded-2xl shadow-gray-700 text-black">
-            <h2 className="card-title bg-green-500 w-30 p-1 rounded">NEWCOM679</h2>
-             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
-            <p className='text-2xl font-bold text-gray-700'>.COM</p>
-            <p className='text-l font-bold text-gray-600'>Domains</p>
-            <p className='mt-3 text-l font-bold text-gray-700 w-full'>Claim a .COM for just $6.79. New customers only.</p>
-            <p className='text-2xl font-bold -mb-7 text-gray-700'>Rs649.86/yr </p>
-            <p className='text-l font-bold -mb-7 text-gray-600'>Instead of Rs1433.71/yr</p>
-            <button className='text-xl border-none bg-amber-100 h-13 rounded mt-6'>Get offer</button>
-            </div>
-            </div>
-            </div>
-            </Link>
 
 
           </div>
@@ -277,11 +193,11 @@ const Home = () => {
             
         </div>
         
-        
+      
 
       </div>
       </div>
-    </div>
+    
     
   )
 }

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Card3 from './Card3'
+import Card3 from '../Cards/Card3'
 
 const BusinessEmail = () => {
 

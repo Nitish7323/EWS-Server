@@ -1,15 +1,15 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Login from './Login';
+import Login from './Components/Navbar/Profile/Login';
 import Body from './Body';
-import Home from './Home'; 
-import Domainname from './Domainname';
-import DomainTransfer from './DomainTransfer';
-import NewTLDS from './NewTLDS';
-import Sharedhosting from './Sharedhosting';
-import BusinessEmail from './BusinessEmail';
-import HostingWordpress from './HostingWordpress';
+import Home from '/src/Components/Home Page/Home'; 
+import Domainname from './Components/Navbar/Domains/Domainname';
+import DomainTransfer from './Components/Navbar/Domains/DomainTransfer';
+import NewTLDS from './Components/Navbar/Domains/NewTLDS';
+import Sharedhosting from './Components/Navbar/Hosting/Sharedhosting';
+import BusinessEmail from './Components/Navbar/E-Mail/BusinessEmail';
+import HostingWordpress from './Components/Navbar/Hosting/HostingWordpress';
 import Footer from './Footer';
 
 const App = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Card2 from './Card2'
+import Card2 from '../Cards/Card2'
 
 const NewTLDS = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Card4 from './Card4'
+import Card4 from '../Cards/Card4'
 
 const HostingWordpress = () => {
       const [clicked1, setClicked1] = useState(false)

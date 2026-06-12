@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Card from './Card'
+import Card from '../Cards/Card'
 
 const Domainname = () => {
   useEffect(()=>{
